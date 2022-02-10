@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="1046px" viewBox="0 0 750 1046" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>椭圆形备份</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="29.5737648%" y1="100%" x2="77.4863831%" y2="9.7445114%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C2D1E0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2">
+        <g id="NOUMENA-2.0备份-10" transform="translate(0.000000, -7902.000000)" fill="url(#linearGradient-1)">
+            <g id="椭圆形" transform="translate(0.000000, 5652.000000)">
+                <circle id="椭圆形备份" cx="227" cy="2773" r="523"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
