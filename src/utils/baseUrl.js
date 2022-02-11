@@ -1,3 +1,2 @@
-const baseUrl = 'https://api.inst.money';
-// const baseUrl = 'http://192.168.2.225:8585'
+const baseUrl = "http://54.205.29.115";
 export default baseUrl;
