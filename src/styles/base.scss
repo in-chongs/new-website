@@ -2,17 +2,17 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #fcfff5;
   color: #000;
   .ant-menu-submenu-inline
     > .ant-menu-submenu-title:hover
     .ant-menu-submenu-arrow::after {
-    background: #0045ff;
+    background: #8ec31e;
   }
   .ant-menu-submenu-inline
     > .ant-menu-submenu-title:hover
     .ant-menu-submenu-arrow::before {
-    background: #0045ff;
+    background: #8ec31e;
   }
 }
 

@@ -3,43 +3,19 @@
     <div class="box">
       <div class="box-left" />
       <div class="box__terms">
-        <div class="g-container">
-          <LinkBox class="terms__term first" key="a">
-            <a class="link-a" href="#">TWITTER</a>
-          </LinkBox>
-          <LinkBox class="terms__term" key="b">
-            <a class="link-a" href="#">TELEGRAM</a>
-          </LinkBox>
-          <span class="right">© 2021 ANM. All rights reserved.</span>
-        </div>
+        <span class="right">© 2021 ANM. All rights reserved.</span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import LinkBox from '@/components/LinkBox.vue';
-
 export default {
   name: 'Footer',
-  components: { LinkBox },
 };
 </script>
 
 <style lang="scss" scoped>
-.box {
-  // @media (min-width: 960px) {
-  //   z-index: 2;
-  //   position: fixed;
-  //   bottom: 0;
-  //   right: 0;
-  //   left: 0;
-  // }
-  .box-left {
-    margin-bottom: 40px;
-  }
-}
-
 .container {
   @media (max-width: 1280px) {
     max-width: 760px;
@@ -72,7 +48,7 @@ export default {
   text-align: center;
   border-radius: 30px;
   cursor: pointer;
-  color: #0045ff;
+  color: #8EC31E;
   font-size: 18px;
   opacity: 0.8;
   transition: opacity 0.3s;
@@ -83,13 +59,13 @@ export default {
 
 .btn--contact {
   margin-right: 60px;
-  border: 1px solid #0045ff;
-  background: #0045ff;
+  border: 1px solid #8EC31E;
+  background: #8EC31E;
   color: #fff;
 }
 
 .btn--login {
-  border: 1px solid #0045ff;
+  border: 1px solid #8EC31E;
   background: transparent;
 }
 
@@ -112,12 +88,11 @@ export default {
 }
 
 .right {
-  float: right;
   color: var(--color-content);
 }
 
 .box__terms {
-  border-top: 1px solid #f2f2f2;
+  text-align: center;
   line-height: 80px;
 }
 

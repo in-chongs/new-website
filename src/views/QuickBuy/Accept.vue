@@ -1,51 +1,21 @@
 <template>
-  <div class="security">
-    <div class="wrapper right">
-      <div class="wrapper-top">
-        <img
-          class="circle-img1"
-          src="../../assets/accept-left-circle7.svg"
-          alt=""
-        />
-      </div>
-      <div class="row right g-container maRight">
+  <div>
+    <div class="wrapper">
+      <div class="row">
         <div class="info">
-          <div class="info__title g-font-mid">
-            <span> One-stop shop for cryptos </span>
+          <div class="info-left">
+            <img src="../../assets/anm-left-background.png" alt="">
           </div>
-          <div class="info__content">
-            <div class="shop-tips">
-              Use any major bank debit card and credit card or third-party
-              payment apps to purchase cryptos. We provide fast exchange between
-              fiat currencies and all popular cryptos including BTC, ETH, USDT
-              and BNB Start your journey into the crypto world now.
-            </div>
-          </div>
-          <div class="circle-img-container">
-            <div class="circle-img">
-              <img class="circle-visa" src="../../assets/visa.png" alt="" />
-              <img
-                class="circle-visa"
-                src="../../assets/MasterCard.png"
-                alt=""
-              />
-              <img class="circle-visa" src="../../assets/ApplePay.svg" alt="" />
-            </div>
-          </div>
-          <div class="circle-img-container">
-            <div class="circle-img4">
-              <img src="../../assets/accept-left-circle2.svg" alt="" />
-            </div>
-          </div>
-          <div class="circle-img-container">
-            <div class="circle-img">
-              <img class="circle-img5" src="../../assets/CHAHUA.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="info--img__wrapper info--img__wrapper-right container">
-          <div class="wrapper-left">
-            <div class="wrapper-left-item">
+          <div class="info-right">
+           <div class="info-right-container">
+             <div class="anm-logo">
+               <img src="../../assets/anm-logo.png" alt="">
+             </div>
+              <div class="info__title g-font-mid">
+               <span> Buy any crypto instantly </span>
+              </div>
+              <div class="wrapper-left">
+               <div class="wrapper-left-item">
               <div class="select-label">You send</div>
               <div class="select-container">
                 <a-input
@@ -118,18 +88,15 @@
               <a-button
                 :class="goToBtnDisabled ? 'goToBtnDisabled' : 'goToBtn'"
                 @click="submitGetOrder()"
-                >Buy
+                >Go To Checkout
               </a-button>
             </div>
-          </div>
-          <div class="circle-img-container">
-            <div class="circle-img13">
-              <img src="../../assets/accept-left-circle13.png" alt="" />
             </div>
-            <div class="circle-img14">
-              <img src="../../assets/accept-left-circle14.png" alt="" />
-            </div>
+           </div>
           </div>
+        </div>
+        <div class="row-right">
+          <img class="background-right" src="../../assets/anmBackground.png" alt="">
         </div>
       </div>
     </div>
@@ -426,88 +393,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.security {
-  text-align: center;
-  padding-top: 40px;
-}
-.wrapper-top {
-  max-width: 1080px;
-  margin: auto;
-  text-align: left;
-}
-.tip {
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--color-content);
-}
-
-.title {
-  margin-top: 10px;
-}
-
-.top {
-  margin-top: 100px;
-  padding-bottom: 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  justify-items: center;
-
-  @media (max-width: 960px) {
-    grid-template-columns: 1fr;
-    grid-row-gap: 40px;
-  }
-}
-
-.info {
-  text-align: left;
-}
-
-.circle-img-container {
-  display: flex;
-  flex: 1;
-  margin-bottom: 20px;
-  @media (max-width: 960px) {
-    margin-bottom: 0;
-  }
-}
-
-.circle-img1 {
-  max-width: 120px;
-}
-
-.circle-img2 {
-  width: 25%;
-  margin-left: 65%;
-  max-width: 120px;
-}
-.circle-img4 {
-  flex: 1;
-  text-align: end;
-}
-.circle-img {
-  flex: 1;
-  margin-top: 40px;
-}
-.circle-img13 {
-  flex: 1;
-  margin-top: 120px;
-  text-align: left;
-}
-.circle-img14 {
-  flex: 1;
-  margin-top: 40px;
-  text-align: right;
-}
-.shop-tips {
-  font-size: 18px;
-  font-weight: 400;
-  opacity: 0.4;
-}
-.circle-visa {
-  height: 32px;
-  margin-right: 20px;
-}
 .info__title {
   font-size: 60px;
   line-height: 70px;
@@ -518,90 +403,54 @@ export default {
     line-height: 35px;
   }
 }
-
-.info__content {
-  margin-top: 30px;
-  color: #546175;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.info--img__wrapper {
-  position: relative;
-}
-
-.info--img {
-  max-width: 100%;
-}
-
 .wrapper {
-  &.right {
-    padding-bottom: 100px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right top;
-    &.wrapper-phone {
+  display: flex;
+  .row{
+    display: flex;
+    width: 100%;
+    .info {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    .info-left{
+      width: 108px;
       @media (max-width: 960px) {
-        padding-bottom: 0;
+        display: none;
       }
     }
-  }
-
-  &.left {
-    padding-bottom: 200px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: left top;
-    @media (max-width: 960px) {
-      background: none;
+    .info-right{
+      display: flex;
+      flex:1;
+      justify-content: center;
+      .info-right-container{
+        width: 500px;
+        @media (max-width: 960px) {
+        width: 100%;
+        }
+        .anm-logo{
+          margin:24px auto 84px
+        }
+      }
     }
+   }
+   .row-right{
+     flex:1;
+     @media (max-width: 960px) {
+        display: none;
+     }
+     .background-right{
+       width: 100%;
+     }
+   }
   }
 }
-
-.row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  align-items: center;
-
-  & > *:nth-child(2) {
-    justify-self: right;
-  }
-
-  @media (max-width: 960px) {
-    display: inline-block;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    grid-row-gap: 100px;
-    & > *:nth-child(2) {
-      justify-self: center;
-    }
-    &.right {
-      & > *:nth-child(1) {
-        grid-row: 1;
-      }
-      & > *:nth-child(2) {
-        grid-row: 2;
-      }
-    }
-    .circle-img5 {
-      max-width: calc(100%);
-    }
-  }
-}
-// .maRight {
-//   @media (max-width: 960px) {
-//     padding: 0;
-//   }
-// }
 .wrapper-left {
-  // width: 380px;
   max-width: calc(100%);
   height: 420px;
   margin-top: 30px;
   padding: 20px;
   background: var(--background-common);
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 40px 0px rgba(142, 195, 30, 0.1);
   border-radius: 4px;
 }
 .wrapper-left-item {
@@ -634,7 +483,7 @@ export default {
   text-align: left;
 }
 .goToBtn {
-  background: #0045ff;
+  background: #8EC31E;
   border-radius: 8px;
   height: 40px;
   width: 100%;
@@ -642,7 +491,7 @@ export default {
   margin-top: 20px;
 }
 .goToBtnDisabled {
-  background: #80a2ff;
+  background: #8EC31E;
   border-radius: 8px;
   height: 40px;
   width: 100%;
